@@ -82,7 +82,6 @@ install-cli-tools: config-brew
 	echo "$$CLI_TOOLS_LIST" | xargs brew install
 
 config-zsh: install-cli-tools
-	miniserve --print-completions zsh > /usr/local/share/zsh/site-functions/_miniserve
 	cp ./zsh/alias.zsh $ZSH_CUSTOM/
 
 config-git: decode-secrets
