@@ -1,15 +1,19 @@
 define CLI_TOOLS_LIST
 wget
 vim
-fd
-fzf
-zola
-zoxide
-sfz
-helix
+bottom
+rnr
+rm-improved
+procs
 exa
-ripgrep
+hexyl
+helix
+fd
+git-delta
 bat
+zoxide
+sk
+miniserve
 open-ocd
 openssl
 endef
@@ -78,7 +82,7 @@ install-cli-tools: config-brew
 	echo "$$CLI_TOOLS_LIST" | xargs brew install
 
 config-zsh: install-cli-tools
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	miniserve --print-completions zsh > /usr/local/share/zsh/site-functions/_miniserve
 	cp ./zsh/alias.zsh $ZSH_CUSTOM/
 
 config-git: decode-secrets
