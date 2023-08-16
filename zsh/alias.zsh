@@ -6,6 +6,6 @@ alias vim=hx
 alias grep=rg
 alias cat=bat
 alias serve=miniserve
-alias top=bottom
+alias top=btm
 alias rm=rip
 alias ps=procs
