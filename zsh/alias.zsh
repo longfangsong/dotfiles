@@ -1,4 +1,4 @@
-alias ls=exa
+alias ls=eza
 alias find=fd
 alias cd=z
 alias realvim=/usr/bin/vim
