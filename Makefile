@@ -5,7 +5,7 @@ bottom
 rnr
 rm-improved
 procs
-exa
+eza
 hexyl
 helix
 fd
